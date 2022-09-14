@@ -9,88 +9,142 @@
 </head>
 <body class="font-montserrat">
     
-    <div class="bg-[#262220] py-4">
-        <p class="text-[#F7F1F0] font-bold text-center text-base">A WORSHIP AND WORD CONFERENCE</p>
+    <div class="bg-[#262220] py-3 md:py-4">
+        <p class="text-[#F7F1F0] font-medium md:font-semibold text-center text-xs md:text-base">A WORSHIP AND WORD CONFERENCE</p>
     </div>
 
     <!-- navbar -->
-    <div class="py-8 px-6">
+    <div class="py-10 px-6 md:px-10">
         <h6 class="text-[#262220] text-center text-xl">THE UNCUFFED</h6>
+
+        <!-- navlinks -->
+        <ul class="flex justify-between items-center mt-10">
+            <li>
+                <a href="#" class="text-[#262220] font-medium text-base">HOME</a>
+            </li>
+            <li>
+                <a href="#guest" class="text-[#262220] font-medium text-base">GUESTS</a>
+            </li>
+            <li>
+                <a href="#" class="text-[#262220] font-medium text-base">ABOUT</a>
+            </li>
+            <li>
+                <a href="#" class="text-[#262220] font-medium text-base">CONTACT</a>
+            </li>
+            <li>
+                 <a href="#" class="text-[#F7F1F0]
+                    bg-[#262220] transition-all hover:bg-white hover:border hover:border-[#262220] rounded-[4px] py-3 px-6
+                     font-medium text-base hover:text-[#262220]">
+                     BUY TICKET
+                    </a>
+            </li>
+
+        </div>
     </div>
 
     <!-- hero section -->
-    <div class="w-full">
+    <div class="relative">
         <img src="./img/hero.png" class="w-full" alt="hero" />
+        <div class="border-2 border-[#F7F1F0] py-3 px-8 flex items-center absolute left-[50%]
+         top-[50%] -translate-y-2/4 -translate-x-2/4 cursor-pointer
+         justify-center rounded-[4px]">
+            <a  href="#" target="_blank" class="text-[#F7F1F0] font-semibold text-base">BUY TICKET HERE</a>
+        </div>
+    </div>
+
+    <!-- banner section -->
+    <div class="md:py-14 py-6 pl-6">
+
+        <div class="flex gap-4 md:gap-6">
+            <div>
+                <img src="./img/banner.png" alt="banner" />
+            </div>
+    
+            <div>
+                <img src="./img/banner2.png" alt="banner" />
+            </div>
+        </div>
+       
+
     </div>
 
     <!-- guests artist -->
-    <div class="py-6">
+    <div id="guest" class="">
         <h6 class="text-[#262220] text-center text-xl">GUESTS</h6>
 
-        <div class="grid grid-cols-3 gap-4 mt-5">
-            <div class="">
-                <img src="./img/user1.png" alt="guest" class="rounded-xl" />
-                <div class="text-center mt-4">
+        <div class="grid md:grid-cols-3 gap-10 md:gap-6 md:mt-8 mt-6">
+            <div>
+                <div class="group relative cursor-pointer">
+                    <img src="./img/user1.png" alt="guest" class="rounded-xl w-full" />
+                    <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 rounded-xl group-hover:opacity-[.5]"></div>
+               </div>
+                <div class="text-center mt-5">
                     <h6 class="text-[#262220] font-semibold text-lg">Bryan Meadows</h6>
                     <p class="text-[#262220] opacity-[.75] text-sm">Guest Speaker</p>
                 </div>
             </div>
             <div>
-                <img src="./img/user2.png" alt="guest" class="rounded-xl" />
-                <div class="text-center mt-4">
+                <div class="group relative cursor-pointer">
+                     <img src="./img/user2.png" alt="guest" class="rounded-xl w-full" />
+                     <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 rounded-xl group-hover:opacity-[.5]"></div>
+                </div>
+                <div class="text-center mt-5">
                     <h6 class="text-[#262220] font-semibold text-lg">Fresh IE</h6>
                     <p class="text-[#262220] opacity-[.75] text-sm">Guest Artist</p>
                 </div>
             </div>
             <div>
-                <img src="./img/user3.png" alt="guest" class="rounded-xl" />
-                <div class="text-center mt-4">
+                <div class="group relative cursor-pointer">
+                    <img src="./img/user3.png" alt="guest" class="rounded-xl w-full" />
+                    <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 rounded-xl group-hover:opacity-[.5]"></div>
+               </div>
+                <div class="text-center mt-5">
                     <h6 class="text-[#262220] font-semibold text-lg">Tim Reddick</h6>
-                    <p class="text-[#262220] opacity-[.75] text-sm">Guest Speaker</p>
+                    <p class="text-[#262220] opacity-[.75] text-sm">Guest Artist</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- footer -->
-    <footer class="mt-4 bg-[#262220] px-8 py-8">
+    <footer class="mt-12 bg-[#262220] px-6 md:px-10 py-8">
 
-        <div class="flex items-center py-20 gap-32">
+        <div class="flex md:flex-row flex-col md:items-center py-6 md:py-20 gap-10 md:gap-44">
             <div>
-                <h6 class="text-[#F7F1F0] text-2xl">THE UNCUFFED</h6>
+                <h6 class="text-[#F7F1F0] text-2xl tracking-wide">THE UNCUFFED</h6>
             </div>
             <div>
                 <div>
-                    <h6 class="text-[#F7F1F0] font-semibold">CONTACT US</h6>
-                    <p class="text-[#F7F1F0] text-sm mt-1">kwasee.official@gmail.com</p>
+                    <h6 class="text-[#F7F1F0] opacity-[.5] md:opacity-[1] font-semibold tracking-wide">CONTACT US</h6>
+                    <p class="text-[#F7F1F0] text-sm mt-1 tracking-wide">kwasee.official@gmail.com</p>
                 </div>
-                <div class="mt-8">
-                    <h6 class="text-[#F7F1F0] font-semibold">LINKS</h6>
+                <div class="mt-8 md:mt-10">
+                    <h6 class="text-[#F7F1F0] opacity-[.5] md:opacity-[1] font-semibold tracking-wide">LINKS</h6>
                     <ul class="mt-1">
                         <li>
-                            <a href="#" class="text-[#F7F1F0] text-sm">Our Blog</a>
+                            <a href="#" class="text-[#F7F1F0] text-sm tracking-wide">Our Blog</a>
                         </li>
-                        <li>
-                            <a href="#" class="text-[#F7F1F0] text-sm">Contact</a>
+                        <li class="mt-1">
+                            <a href="#" class="text-[#F7F1F0] text-sm tracking-wide">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="mt-8">
-                    <h6 class="text-[#F7F1F0] font-semibold">SOCIAL MEDIA</h6>
+                <div class="mt-8 md:mt-10">
+                    <h6 class="text-[#F7F1F0] opacity-[.5] md:opacity-[1] font-semibold tracking-wide">SOCIAL MEDIA</h6>
                     <ul class="mt-1">
-                        <li >
-                            <a href="#" class="text-[#F7F1F0] text-sm">Facebook</a>
-                        </li>
                         <li>
-                            <a href="#" class="text-[#F7F1F0] text-sm">Instagram</a>
+                            <a href="https://www.facebook.com" target="_blank" class="text-[#F7F1F0] text-sm tracking-wide">Facebook</a>
+                        </li>
+                        <li class="mt-1">
+                            <a href="https://www.instagram.com" target="_blank"  class="text-[#F7F1F0] text-sm tracking-wide">Instagram</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="text-center">
-            <p class="text-[#F7F1F0] font-semibold text-sm">Copyright &copy; 2022 All rights reserved. TheUncuffed</p>
+        <div class="text-center mt-10 md:mt-0">
+            <p class="text-[#F7F1F0] font-semibold md:text-sm text-xs tracking-wide">Copyright &copy; 2022 All rights reserved. TheUncuffed</p>
         </div>
         
     </footer>
