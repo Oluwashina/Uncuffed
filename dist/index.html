@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uncuffed</title>
     <link rel="stylesheet" href="./output.css" />
+      <!-- Link Swiper's CSS -->
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body class="font-montserrat">
 
@@ -47,7 +52,7 @@
             </ul>
 
               <!-- mobile menu -->
-        <div class="absolute top-0 inset-x-0 z-50 p-2 transition transform origin-top-right lg:hidden hidden " id="navmenu">
+        <div class="absolute top-[30px] inset-x-0 z-50 p-2 transition transform origin-top-right lg:hidden hidden " id="navmenu">
             <div class="shadow-md bg-white border-[#262220] border-opacity-[.5] border overflow-hidden">
 
               <div class="px-5 pt-4 flex justify-end">
@@ -98,16 +103,16 @@
     <!-- banner section -->
     <div class="md:py-14 py-6 pl-6">
 
-        <div class="flex gap-4 md:gap-6">
-            <div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <img src="./img/banner.png" alt="banner" />
-            </div>
-    
-            <div>
+               </div>
+              <div class="swiper-slide">
                 <img src="./img/banner2.png" alt="banner" />
+              </div>
             </div>
-        </div>
-       
+          </div>       
 
     </div>
 
@@ -194,6 +199,8 @@
     
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./index.js" ></script>
 </body>
 </html>

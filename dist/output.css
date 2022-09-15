@@ -597,6 +597,22 @@ video {
   top: 0px;
 }
 
+.top-7{
+  top: 1.75rem;
+}
+
+.top-5{
+  top: 1.25rem;
+}
+
+.top-6{
+  top: 1.5rem;
+}
+
+.top-\[30px\]{
+  top: 30px;
+}
+
 .z-50{
   z-index: 50;
 }
