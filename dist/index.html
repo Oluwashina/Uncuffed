@@ -6,24 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uncuffed</title>
     <link rel="stylesheet" href="./output.css" />
-      <!-- Link Swiper's CSS -->
-      <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
 </head>
 <body class="font-montserrat">
 
     <!-- Running on the terminal locally (npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch) -->
     
-    <div class="bg-[#262220] py-3 md:py-4">
-        <p class="text-[#F7F1F0] font-medium md:font-semibold text-center text-xs md:text-base">A PRODUCT OF GRACE</p>
+    <div class="bg-[#262220] py-4 md:py-6">
+        <!-- <p class="text-[#F7F1F0] font-medium md:font-semibold text-center text-xs md:text-base">A PRODUCT OF GRACE</p> -->
     </div>
 
     <!-- navbar -->
     <div class="md:py-10 py-4 px-6 md:px-10">
         <div class="flex md:block justify-between">
             <img src="./img/menu.svg" alt="menu" id="open" class="md:hidden cursor-pointer" />
+            <img src="./img/close.svg" alt="close" id="close" class="md:hidden hidden cursor-pointer" />
             <div>
                 <h6 class="text-[#262220] md:text-center font-semibold text-lg md:text-2xl">THE UNCUFFED</h6>
                 <p class="text-[#262220] md:text-center font-medium text-sm">A production of grace</p>
@@ -52,16 +48,8 @@
             </ul>
 
               <!-- mobile menu -->
-        <div class="absolute top-[30px] inset-x-0 z-50 p-2 transition transform origin-top-right lg:hidden hidden " id="navmenu">
+        <div class="absolute top-[80px] inset-x-0 z-50 p-2 transition transform origin-top-right lg:hidden hidden " id="navmenu">
             <div class="shadow-md bg-white border-[#262220] border-opacity-[.5] border overflow-hidden">
-
-              <div class="px-5 pt-5 flex">
-                <!-- close icon(X) -->
-                <div class="" id="close">
-                  <img src="./img/close.svg" alt="close" />
-                </div>
-              </div>
-
               <div class="pt-2">
                 <a href="#" class="block px-4 py-3 font-medium text-sm text-[#262220] border-[#262220] border-b border-opacity-[.5]  transition-all text-opacity-[.5] hover:text-white hover-opacity-[1] hover:bg-[#262220]">HOME</a>
   
@@ -109,10 +97,10 @@
     <div id="guest" class="">
         <h6 class="text-[#262220] text-center font-semibold text-xl">GUESTS</h6>
 
-        <div class="grid md:grid-cols-3 gap-10 md:gap-6 md:mt-8 mt-6">
-            <div>
+        <div class="grid grid-cols-3 gap-52 md:gap-6 md:mt-8 mt-8 px-4 md:px-0 overflow-scroll lg:overflow-hidden">
+            <div class="w-[190px] md:w-auto">
                 <a href="https://bryanmeadows.com" target="_blank" class="group relative cursor-pointer">
-                    <img src="./img/guest1.png" alt="guest" class="rounded-xl w-full" />
+                    <img src="./img/guest1.png" alt="guest" class="rounded-xl w-full lg:h-[600px]" />
                     <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 rounded-xl group-hover:opacity-[.5]"></div>
                 </a>
                 <div class="text-center mt-5">
@@ -120,9 +108,9 @@
                     <p class="text-[#262220] opacity-[.75] text-sm">Guest Speaker</p>
                 </div>
             </div>
-            <div>
+            <div class="w-[190px] md:w-auto">
                 <a href="https://instagram.com/fresh_kmf/?igshid=YmMyMTA2M2Y%3D" target="_blank" class="group relative cursor-pointer">
-                     <img src="./img/guest2.png" alt="guest" class="rounded-xl w-full" />
+                     <img src="./img/guest2.png" alt="guest" class="rounded-xl w-full lg:h-[600px]" />
                      <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 rounded-xl group-hover:opacity-[.5]"></div>
                 </a>
                 <div class="text-center mt-5">
@@ -130,9 +118,9 @@
                     <p class="text-[#262220] opacity-[.75] text-sm">Guest Artist</p>
                 </div>
             </div>
-            <div>
+            <div class="w-[190px] md:w-auto">
                 <a href="https://bio.site/timreddick" target="_blank" class="group relative cursor-pointer">
-                    <img src="./img/guest3.png" alt="guest" class="rounded-xl w-full" />
+                    <img src="./img/guest3.png" alt="guest" class="rounded-xl w-full lg:h-[600px]" />
                     <div class="absolute inset-0 w-full h-full transition-all bg-[#000] opacity-0 rounded-xl group-hover:opacity-[.5]"></div>
                 </a>
                 <div class="text-center mt-5">
@@ -144,23 +132,15 @@
     </div>
 
      <!-- banner section -->
-     <div class="md:py-14 py-6 pl-6">
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./img/banner.png" alt="banner" />
-               </div>
-              <div class="swiper-slide">
-                <img src="./img/banner2.png" alt="banner" />
-              </div>
-            </div>
-          </div>       
-
+     <div class="md:py-10 py-8 px-4 md:px-10">
+        <div>
+            <img src="./img/banner.png" alt="banner" class="w-full" />
+        </div>
     </div>
 
+
     <!-- footer -->
-    <footer class="mt-12 bg-[#262220] px-4 md:px-10 py-8">
+    <footer class="mt-4 md:mt-6 bg-[#262220] px-4 md:px-10 py-8">
 
         <div class="flex md:flex-row flex-col md:items-center py-6 md:py-20 gap-10 md:gap-44">
             <div>
@@ -205,8 +185,6 @@
     
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-      <!-- Swiper JS -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./index.js" ></script>
 </body>
 </html>
