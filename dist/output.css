@@ -614,6 +614,10 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .block{
   display: block;
 }
@@ -923,6 +927,10 @@ video {
     margin-top: 0.25rem;
   }
 
+  .md\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1012,6 +1020,11 @@ video {
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:font-semibold{
